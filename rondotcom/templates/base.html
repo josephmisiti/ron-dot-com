@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{% block title %} xxxx {% endblock %} </title>
+<link rel="stylesheet" href="{{MEDIA_URL}}css/style.css" type="text/css" charset="utf-8"></link>
+<script src="{{MEDIA_URL}}js/app.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+</script>
+
+
+{% block header %} {% endblock %}
+</head>
+<body> 
+	<section>
+	{% block content %} 
+	
+	{% endblock %} 
+	</section>
+	<footer>							   
+	  </footer>
+</body>
+</html>
