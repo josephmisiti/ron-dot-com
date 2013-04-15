@@ -7,6 +7,9 @@ from django.conf import settings
 
 urlpatterns = patterns('',
     url(r'^$', 	'apps.static.views.index', name='index'),
+    url(r'^portfolio', 	'apps.static.views.portfolio', name='portfolio'),
+    url(r'^contact', 	'apps.static.views.contact', name='contact'),
+
 )
 
 
