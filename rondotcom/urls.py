@@ -10,6 +10,14 @@ urlpatterns = patterns('',
     url(r'^portfolio', 	'apps.static.views.portfolio', name='portfolio'),
     url(r'^contact', 	'apps.static.views.contact', name='contact'),
 
+    url(r'^rustam-1', 		'apps.static.views.portfolio_one', name='portfolio-one'),
+    url(r'^rostam-2', 		'apps.static.views.portfolio_two', name='portfolio-two'),
+    url(r'^joey-amoia', 	'apps.static.views.portfolio_three', name='portfolio-three'),
+    url(r'^leonard-amoia', 	'apps.static.views.portfolio_four', name='portfolio-four'),
+    url(r'^arian-mallon', 	'apps.static.views.portfolio_five', name='portfolio-five'),
+
+
+
 )
 
 
