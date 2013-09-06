@@ -100,17 +100,20 @@ ROOT_URLCONF = 'rondotcom.urls'
 WSGI_APPLICATION = 'rondotcom.wsgi.application'
 
 INSTALLED_APPS = (
-    # 'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    # 'django.contrib.sites',
-    # 'django.contrib.messages',
-    # 'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
 )
+
+if not DEBUG:
+	INSTALLED_APPS += (
+		'gunicorn',
+	)
+
+
+try:
+	from gunicorn_conf import *
+except ImportError, e:
+	pass
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
