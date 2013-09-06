@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %} 
+
+{% include "misc/nav.html" %}
+
+<div class='portfolio-wrapper' style="margin-bottom:140px">
+	<div class='portfolio-row'>
+		<span class='portfolio-thumbnail'>
+		<img src="https://s3.amazonaws.com/ranaldolopezphotography/rustan-1/thumb.jpg" height="400" width="283" onclick='location.href="{% url portfolio-one %}"'>
+		</span>
+		<span class='portfolio-thumbnail' style="margin-left:60px">
+		<img src="https://s3.amazonaws.com/ranaldolopezphotography/robert/thumb.jpg" height="400" width="267" onclick='location.href="{% url portfolio-two %}"'>
+		</span>	
+	</div>
+</div>
+
+
+{% endblock %}

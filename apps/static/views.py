@@ -7,6 +7,9 @@ def index(request):
 def portfolio(request):
 	return render(request, 'static/portfolio.html', {})
 	
+def videos(request):
+	return render(request, 'static/videos.html', {})
+	
 def contact(request):
 	return render(request, 'static/contact.html', {})
 	
