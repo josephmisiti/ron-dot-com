@@ -4,7 +4,7 @@ WSGI config for rondotcom project.
 This module contains the WSGI application used by Django's development server
 and any production WSGI deployments. It should expose a module-level variable
 named ``application``. Django's ``runserver`` and ``runfcgi`` commands discover
-this application via the ``WSGI_APPLICATION`` setting.
+this application via the ``ron-dot-com/rondotcom`` setting.
 
 Usually you will have the standard Django WSGI application here, but it also
 might make sense to replace the whole Django WSGI application with a custom one
@@ -18,7 +18,7 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "rondotcom.settings")
 
 # This application object is used by any WSGI server configured to use this
-# file. This includes Django's development server, if the WSGI_APPLICATION
+# file. This includes Django's development server, if the ron-dot-com/rondotcom
 # setting points here.
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
