@@ -48,3 +48,12 @@ body, html{
 .portfolio-row {
 	margin-top:10px;
 }
+
+.portfolio-row-landing {
+	margin-top:20px;
+}
+
+.portfolio-thumbnail-landing {
+	margin-left:20px;	
+	
+}
