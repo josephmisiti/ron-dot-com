@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^rostam-two', 		'apps.static.views.portfolio_three', name='portfolio-three'),
     url(r'^rostam-three', 		'apps.static.views.portfolio_four', name='portfolio-four'),
     url(r'^joey', 				'apps.static.views.portfolio_five', name='portfolio-five'),
+    url(r'^lenny', 				'apps.static.views.portfolio_six', name='portfolio-six'),
 
 
 
